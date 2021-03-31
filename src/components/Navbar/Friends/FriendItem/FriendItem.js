@@ -8,7 +8,8 @@ const FriendItem = (props) => {
     return (
         <div>
             <NavLink to={path}><div className={styles.friend}><img src={props.link} alt="name1"></img>{props.name}</div></NavLink>
-        </div>    
+        </div>
+
     );
 }
 
