@@ -1,0 +1,26 @@
+.friends_container {
+    margin-top: 150px;
+    text-align: center;
+    color: azure;
+}
+.friends_container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.friends_title {
+    font-size: 35px;
+}
+
+.friend {
+    width: 52px;
+    height: 70px;
+    float: left;
+}
+
+.friend img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

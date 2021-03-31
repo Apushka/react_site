@@ -18,15 +18,18 @@
     position: relative;
     display: flex;
     align-items:center;
-    justify-content: space-between;
     height: 50px;
     padding: 10px;
     padding-right: 30px;
     border-bottom: 1px solid rgba(219, 219, 219, 0.3);
+
 }
 
 .dialog::after {
+    position: absolute;
     content: '';
+    top: 30px;
+    right: 25px;
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -34,10 +37,13 @@
 
 }
 
-/* .messages {
-    padding: 10px;
-    outline: 1px solid red;
+.sendMessage {
+    grid-column-start: 2;
+}
 
-} */
+.textarea {
+    width: 50%;
+    height: 50px;
+}
 
 

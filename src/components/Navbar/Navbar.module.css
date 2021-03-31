@@ -12,3 +12,9 @@
 .item a.activeLink {
   color: gold;
 }
+
+.friends_container {
+  margin-top: 50px;
+  color: white;
+  font-size: 35px;
+}
