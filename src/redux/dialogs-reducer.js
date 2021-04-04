@@ -8,7 +8,7 @@ let initialState = {
         { id: 3, message: 'Yo' },
         { id: 4, message: 'Yo' },
         { id: 5, message: 'Yo' },
-        { id: 6, message: null }
+        { id: 6, message: '' }
     ],
     dialogs: [
         { id: 1, name: 'Dimych', link: 'https://www.nj.com/resizer/h8MrN0-Nw5dB5FOmMVGMmfVKFJo=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg' },
@@ -20,17 +20,23 @@ let initialState = {
     ],
     newMessageText: 'sample text'
 }
-    
+
 
 const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
         case SEND_MESSAGE:
-            state.messages[5].message = state.newMessageText;
-            state.newMessageText = '';
-            return state;
+            const newArray = [...state.messages];
+            newArray[5].message = state.newMessageText;
+            return {
+                ...state,
+                messages: newArray,
+                newMessageText: ''
+            }
         case UPDATE_NEW_MESSAGE_TEXT:
-            state.newMessageText = action.newMessage;
-            return state;
+            return {
+                ...state,
+                newMessageText: action.newMessage
+            };
         default: return state;
     }
 }

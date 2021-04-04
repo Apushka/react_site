@@ -1,0 +1,54 @@
+.usersPhoto {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    background-color: aliceblue;
+}
+
+ .buttonLess::after {
+    visibility: visible;
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border: 10px solid slategray;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: slategray;
+    border-left-color: transparent;
+}
+
+.buttonMore::after {
+    position: absolute;
+    visibility: visible;
+    content: '';
+    top: 2px;
+    right: -6px;
+    width: 0;
+    height: 0;
+    border: 10px solid slategray;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: slategray;
+} 
