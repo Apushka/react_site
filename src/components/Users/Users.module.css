@@ -6,9 +6,11 @@
 
 .selectedPage {
     font-weight: bold;
+    margin: 0 15px;
 }
 
 .pagination {
+    cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,6 +23,8 @@
     height: 25px;
     border-radius: 25%;
     background-color: aliceblue;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
  .buttonLess::after {
