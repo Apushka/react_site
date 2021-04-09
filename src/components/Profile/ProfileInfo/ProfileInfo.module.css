@@ -1,3 +1,19 @@
 .descriptionBlock {
+    display: flex;
+    justify-content: flex-start;
     padding: 10px;
+}
+
+.avaName {
+    float: left;
+    text-align: center;
+    width: 350px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.profileDescription {
+    float: left;
+    width: 350px;
 }
